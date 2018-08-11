@@ -8,15 +8,25 @@
 
 import UIKit
 
+//変数の設置
 var Todokobetsunonakami = [String]()
 
 class AddController: UIViewController {
     
-    
+    //テキストフィールドの設定
     @IBOutlet weak var TodoTextField: UITextField!
     
-    
+    //Addボタンの設定
     @IBAction func TodoAddController(_ sender: Any) {
+        //変数に入力内容を入れる
+        Todokobetsunonakami.append(TodoTextField.text!)
+        
+        //Addボタンをタップ後フィールドを空にする
+        TodoTextField.text = ""
+        
+        //変数の中身をUD(簡易的な保存先)に追加
+        UserDefaults.standard.set(Todokobetsunonakami, forKey: "TodoList")
+        
     }
     
     
