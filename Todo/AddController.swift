@@ -26,13 +26,10 @@ class AddController: UIViewController {
         
         //変数の中身をUD(簡易的な保存先)に追加
         UserDefaults.standard.set(Todokobetsunonakami, forKey: "TodoList")
-        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -40,7 +37,6 @@ class AddController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -51,5 +47,4 @@ class AddController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
