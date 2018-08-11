@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Controller-->
         <scene sceneID="0mj-vI-nZy">
             <objects>
-                <viewController storyboardIdentifier="AddController" id="a5i-pH-RRz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddController" id="a5i-pH-RRz" customClass="AddController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccI-bf-5t5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,11 +90,17 @@
                                 <rect key="frame" x="172" y="250" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="TodoAddController:" destination="a5i-pH-RRz" eventType="touchUpInside" id="ofd-gj-R36"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Um6-RP-iCN"/>
                     </view>
+                    <connections>
+                        <outlet property="TodoTextField" destination="kGQ-IA-z1J" id="XWO-dJ-3Jr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUP-Mq-Foe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
