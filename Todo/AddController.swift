@@ -17,8 +17,8 @@ class AddController: UIViewController {
     @IBOutlet weak var TodoTextField: UITextField!
     
     //Addボタンの設定
-    @IBAction func TodoAddController(_ sender: Any) {
-        //変数に入力内容を入れる
+    @IBAction func TodoAddButton(_ sender: Any) {
+    //変数に入力内容を入れる
         Todokobetsunonakami.append(TodoTextField.text!)
         
         //Addボタンをタップ後フィールドを空にする

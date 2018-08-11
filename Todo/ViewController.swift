@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    //表示するセルの数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return Todokobetsunonakami.count
     }
     
+    //表示するセルの中身を決める
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  TodoCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
         TodoCell.textLabel!.text = Todokobetsunonakami[indexPath.row]

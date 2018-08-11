@@ -46,6 +46,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mzf-38-Zmg"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wcC-lG-DnK"/>
                                 </connections>
                             </tableView>
@@ -91,6 +92,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
+                                    <action selector="TodoAddButton:" destination="a5i-pH-RRz" eventType="touchUpInside" id="Tcd-vp-wOU"/>
                                     <action selector="TodoAddController:" destination="a5i-pH-RRz" eventType="touchUpInside" id="ofd-gj-R36"/>
                                 </connections>
                             </button>
